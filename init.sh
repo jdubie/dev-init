@@ -2,8 +2,7 @@
 
 # install vim, git, ...
 ## on Ubuntu
-# sudo apt-get install vim
-# sudo apt-get install git-core
+sudo apt-get install zsh
 
 # setup screen
 git clone https://github.com/jdubie/screen.git ~/.screen
