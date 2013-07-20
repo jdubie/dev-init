@@ -18,4 +18,3 @@ git clone git@github.com:jdubie/tmux ~/.tmux > /dev/null
 echo 'configuring zsh'
 git clone git@github.com:jdubie/oh-my-zsh ~/.oh-my-zsh > /dev/null
 ~/.oh-my-zsh/deploy.sh
-chsh $USER -s `which zsh`; # requires password
