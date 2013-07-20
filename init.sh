@@ -1,17 +1,18 @@
 #!/bin/sh
 
-# install vim, git, ...
-## on Ubuntu
-sudo apt-get install zsh
-
-# setup screen
-git clone https://github.com/jdubie/screen.git ~/.screen
-cp ~/.screen/screenrc.screen-template ~/.screenrc
+# install near and dear things
+sudo apt-get install -y zsh git-core vim tmux
 
 # setup vim
-git clone https://github.com/jdubie/vim.git ~/.vim
-cp ~/.vim/vimrc.vim-template ~/.vimrc
+git clone git@github.com:jdubie/vim ~/.vim
+~/.vim/deploy.sh
+
+# setup tmux
+git clone git@github.com:jdubie/tmux
+cd ~
+ln -s ~/.tmux/tmux.conf .tmux.conf
 
 # setup zsh
-git clone https://github.com/jdubie/oh-my-zsh.git ~/.oh-my-zsh
-cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+git clone git@github.com:jdubie/oh-my-zsh ~/.oh-my-zsh
+~/.oh-my-zsh/deploy.sh
+chsh -s `which zsh` # requires password
