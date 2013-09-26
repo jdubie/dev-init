@@ -7,8 +7,10 @@ sudo apt-get install -y zsh git-core vim tmux > /dev/null
 # setup vim
 echo 'configuring vim'
 git clone git@github.com:jdubie/vim ~/.vim --quiet
+cd ~/.vim
 git submodule init
 git submodule update
+cd
 ~/.vim/deploy.sh
 
 # setup tmux
