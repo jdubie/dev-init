@@ -6,19 +6,6 @@ sudo apt-get install -y zsh git-core vim tmux > /dev/null
 
 # setup vim
 echo 'configuring vim'
-git clone git@github.com:jdubie/vim ~/.vim --quiet
-cd ~/.vim
-git submodule init
-git submodule update
-cd
-~/.vim/deploy.sh
-
-# setup tmux
-echo 'configuring tmux'
-git clone git@github.com:jdubie/tmux ~/.tmux --quiet
-~/.tmux/deploy.sh
-
-# setup zsh
-echo 'configuring zsh'
-git clone git@github.com:jdubie/oh-my-zsh ~/.oh-my-zsh --quiet
-~/.oh-my-zsh/deploy.sh
+git clone git@github.com:jdubie/dotfiles ~/.dotfiles --quiet
+cd ~/.dotfiles
+make install
