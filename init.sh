@@ -6,6 +6,6 @@ sudo apt-get install -y zsh git-core vim tmux > /dev/null
 
 # setup vim
 echo 'configuring vim'
-git clone git@github.com:jdubie/dotfiles ~/.dotfiles --quiet
+git clone https://github.com/jdubie/dotfiles.git ~/.dotfiles --quiet
 cd ~/.dotfiles
 make install
