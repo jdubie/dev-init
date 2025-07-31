@@ -2,7 +2,7 @@
 
 # install near and dear things
 echo 'installing zsh, git, vim, tmux'
-sudo apt-get install -y zsh git-core vim tmux > /dev/null
+sudo apt-get install -y build-essential zsh git-core vim tmux > /dev/null
 
 # setup vim
 echo 'configuring vim'
